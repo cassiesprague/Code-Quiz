@@ -22,7 +22,7 @@
     </header>
 
     <container>
-        <div id="homeContainer" class="none">
+        <div id="header" class="none">
             <h1>Welcome to Code Quiz!</h1>
             <p>How to play: You have 2 minutes to answer as many questions correctly as possible. For every incorrect answer, you will lose 5 seconds on the timer. The game is over when the time runs out!</p>
             <p><strong>Good Luck!</strong></p>
@@ -31,9 +31,37 @@
         </div>
     </container>
 
-
+    <div id="quizBox" style="display: none"> 
+        <h2 id="questionHeader"></h2>
+            <ul>
+                <div id="answerChoices">
+                    <button id="choiceA"></button>
+                </div>
+                <div>
+                    <button id="choiceB"></button>
+                </div>
+                <div>
+                    <button id="choiceC"></button>
+                </div>
+                <div>
+                    <button id="choiceD"></button>
+                </div>
+            </ul>
+        </div>
 
 </body>
+
+<section id="AnswerResponse">
+</section>
+
+<div id= "game-over" style="display: none">
+    <h2> Game Over!</h2>
+    Score: <var id="final-score"> </var>
+    </br>
+    Initials: <input type="text"  value="initials" id="initials">
+    </br>
+    <input type="button" value="submit" id="submit_intials" onclick="submit_final_score()">
+</div>
 
 <script src="script.js"></script>
 
