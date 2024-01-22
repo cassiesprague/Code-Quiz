@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <header>
+        <section id="high-scores" style="display: none">
+            <input type="button" value="High Scores" onclick="high_scores()"></br>
+            Score: <var id="score"> </var>
+        </section>
+
+        <section id="timeRemaining" style="display: none">
+            Time Remaining: <span id="timer"></span>
+        </section>
+
+    </header>
+
+    <container>
+        <div id="homeContainer" class="none">
+            <h1>Welcome to Code Quiz!</h1>
+            <p>How to play: You have 2 minutes to answer as many questions correctly as possible. For every incorrect answer, you will lose 5 seconds on the timer. The game is over when the time runs out!</p>
+            <p><strong>Good Luck!</strong></p>
+            <br>
+            <button id="startBtn">Start Quiz</button>
+        </div>
+    </container>
+
+
+
 </body>
+
+<script src="script.js"></script>
+
 </html>
