@@ -14,6 +14,7 @@
     var qIndex = 0
     let i = 0
 
+    //below is all the questions, asnwer choices, and correct answer
     var questionsArray = [
         {
             question: "What is an example of a data structure?",
@@ -71,7 +72,7 @@ console.log(questionsArray);
 
 console.log(time);
 
-// hide intro and unhide question and start clock
+// below hides intro and unhides question and start clock
         function startQuiz() {
             headerBox.setAttribute("class", "hide")
             quizBox.removeAttribute("class")
@@ -87,7 +88,7 @@ function timer() {
     document.getElementById("timer").innerHTML = time;
 }
 
-//repeatable function
+//below shows a repeatable function
 function getQuestion() {
     questionHeader.textContent = questionsArray[i].question;
     choiceA.textContent = questionsArray[i].answerChoices[]; 
