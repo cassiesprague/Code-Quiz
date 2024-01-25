@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- below shows the time remaining on the timer -->
+        <section id="timeRemaining">
+            Time Remaining: <span id="timer">0</span>
+        </section>
+
+    </header>
+
+    <container>
+        <!-- below shows the header box with how to play the game and the start button -->
+        <div id="headerBox">
+            <h1>Welcome to Code Quiz!</h1>
+            <p>How to play: You have 2 minutes to answer as many questions correctly as possible. For every incorrect answer, you will lose 5 seconds on the timer. The game is over when the time runs out!</p>
+            <p><strong>Good Luck!</strong></p>
+            <br>
+            <button id="startBtn">Start Quiz</button>
+        </div>
+    </container>
+
+    <div id="quizBox" class="hide"> 
+        <h2 id="questionHeader"></h2>
+        <!-- below shows the box that will hold the questions and answers -->
+            <ul>
+                <div id="answerChoices">
+                    <button id="choiceA"></button>
+                </div>
+                <div>
+                    <button id="choiceB"></button>
+                </div>
+                <div>
+                    <button id="choiceC"></button>
+                </div>
+                <div>
+                    <button id="choiceD"></button>
+                </div>
+            </ul>
+        </div>
+
+</body>
+
+<section id="AnswerResponse">
+</section>
+
+<div id= "game-over" class="hide">
+    <!-- below shows the game over once the time runs out and the initals and score -->
+    <h2> Game Over!</h2>
+    Score: <var id="final-score"> </var>
+    </br>
+    Initials: <input type="text"  value="initials" id="initials">
+    </br>
+    <input type="button" value="submit" id="submit_intials">
+</div>
+
+<script src="script.js"></script>
+
+</html>
